@@ -1,1 +1,65 @@
+$green: #60b158;
 
+.header {
+    width: 100vw;
+    box-sizing: border-box;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3vw;
+    color: $green;
+
+    a {
+        margin-left: 1vw;
+        color: $green;
+        text-decoration: none;
+    }
+}
+
+.splash {
+    width: 100vw; height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 20vw;
+    }
+}
+
+.about {
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 10vh 30vw;
+    text-align: center;
+    background-color: $green;
+    color: white;
+
+    h1 {
+        font-size: 4vh;
+        margin-bottom: 5vh;
+    }
+
+    p {
+        font-size: 2vh;
+        line-height: 150%;
+    }
+}
+
+.resume {
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 10vh 15vw;
+    text-align: center;
+    color: $green;
+
+    h1 {
+        font-size: 4vh;
+        margin-bottom: 5vh;
+    }
+
+    img {
+        width: 70vw;
+    }
+}

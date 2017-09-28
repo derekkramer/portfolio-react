@@ -1,0 +1,48 @@
+.header {
+  width: 100vw;
+  box-sizing: border-box;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3vw;
+  color: #60b158; }
+  .header a {
+    margin-left: 1vw;
+    color: #60b158;
+    text-decoration: none; }
+
+.splash {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .splash img {
+    width: 20vw; }
+
+.about {
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 10vh 30vw;
+  text-align: center;
+  background-color: #60b158;
+  color: white; }
+  .about h1 {
+    font-size: 4vh;
+    margin-bottom: 5vh; }
+  .about p {
+    font-size: 2vh;
+    line-height: 150%; }
+
+.resume {
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 10vh 15vw;
+  text-align: center;
+  color: #60b158; }
+  .resume h1 {
+    font-size: 4vh;
+    margin-bottom: 5vh; }
+  .resume img {
+    width: 70vw; }
