@@ -1,4 +1,5 @@
 $green: #60b158;
+$gold: #C2965D;
 
 .header {
     width: 100vw;
@@ -7,8 +8,13 @@ $green: #60b158;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 3vw;
+    padding: 2vh 2vw;
     color: $green;
+
+    h1 {
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
+    }
 
     a {
         margin-left: 1vw;
@@ -61,5 +67,76 @@ $green: #60b158;
 
     img {
         width: 70vw;
+    }
+}
+
+.portfolio {
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 10vh 15vw;
+    text-align: center;
+    background-color: $green;
+    color: white;
+
+    h1 {
+        font-size: 4vh;
+        margin-bottom: 5vh;
+    }
+
+    .panel {
+        width: 70vw;
+        display: flex;
+        justify-content: space-between;
+
+        div {
+            width: 15vw;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.contact {
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 10vh 30vw 30vh 30vw;
+    text-align: center;
+    color: $green;
+
+    h1 {
+        font-size: 4vh;
+        margin-bottom: 5vh;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        input, textarea {
+            width: 100%;
+            font-size: 2vh;
+            margin-bottom: 3vh;
+            padding: 1vh;
+            resize: none;
+            border: 2px solid $gold;
+        }
+
+        button {
+            width: 10vw;
+            margin: 1vh 0;
+            padding: 1vh 2vw;
+            border: 2px solid $gold;
+            background-color: white;
+            font-size: 2vh;
+            color: $gold;
+        }
+
+        button:hover {
+            background-color: $gold;
+            color: white;
+        }
     }
 }

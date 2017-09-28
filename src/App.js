@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import './css/App.css';
 
+import Contact from './components/Contact';
+
 class App extends Component {
     render() {
         return (
@@ -9,6 +11,8 @@ class App extends Component {
                 <Splash />
                 <About />
                 <Resume />
+                <Portfolio />
+                <Contact />
             </div>
         );
     }
@@ -40,6 +44,25 @@ const Resume = () =>
     <section className='resume'>
         <h1>Resumé</h1>
         <img src='./resume.png' />
+    </section>
+
+const Portfolio = () =>
+    <section className='portfolio'>
+        <h1>Portfolio</h1>
+        <div className='panel'>
+            <div>
+                <img src='./project1.png' />
+            </div>
+            <div>
+                <img src='./project2.png' />
+            </div>
+            <div>
+                <img src='./project3.png' />
+            </div>
+            <div>
+                <img src='./project4.png' />
+            </div>
+        </div>
     </section>
 
 export default App;

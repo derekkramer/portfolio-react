@@ -5,8 +5,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 3vw;
+  padding: 2vh 2vw;
   color: #60b158; }
+  .header h1 {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0; }
   .header a {
     margin-left: 1vw;
     color: #60b158;
@@ -46,3 +49,54 @@
     margin-bottom: 5vh; }
   .resume img {
     width: 70vw; }
+
+.portfolio {
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 10vh 15vw;
+  text-align: center;
+  background-color: #60b158;
+  color: white; }
+  .portfolio h1 {
+    font-size: 4vh;
+    margin-bottom: 5vh; }
+  .portfolio .panel {
+    width: 70vw;
+    display: flex;
+    justify-content: space-between; }
+    .portfolio .panel div {
+      width: 15vw; }
+      .portfolio .panel div img {
+        width: 100%; }
+
+.contact {
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 10vh 30vw 30vh 30vw;
+  text-align: center;
+  color: #60b158; }
+  .contact h1 {
+    font-size: 4vh;
+    margin-bottom: 5vh; }
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .contact form input, .contact form textarea {
+      width: 100%;
+      font-size: 2vh;
+      margin-bottom: 3vh;
+      padding: 1vh;
+      resize: none;
+      border: 2px solid #C2965D; }
+    .contact form button {
+      width: 10vw;
+      margin: 1vh 0;
+      padding: 1vh 2vw;
+      border: 2px solid #C2965D;
+      background-color: white;
+      font-size: 2vh;
+      color: #C2965D; }
+    .contact form button:hover {
+      background-color: #C2965D;
+      color: white; }
