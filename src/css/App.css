@@ -78,6 +78,8 @@
   .contact h1 {
     font-size: 4vh;
     margin-bottom: 5vh; }
+  .contact .error {
+    color: red; }
   .contact form {
     display: flex;
     flex-direction: column;
