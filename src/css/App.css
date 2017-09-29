@@ -12,8 +12,10 @@
     -webkit-margin-after: 0; }
   .header a {
     margin-left: 1vw;
-    color: #60b158;
+    color: #C2965D;
     text-decoration: none; }
+  .header a:hover {
+    border-bottom: 3px solid #C2965D; }
 
 .splash {
   width: 100vw;
@@ -21,8 +23,20 @@
   display: flex;
   justify-content: center;
   align-items: center; }
-  .splash img {
+  .splash .logo {
     width: 20vw; }
+  .splash .arrow {
+    position: absolute;
+    bottom: 5vh;
+    width: 3vw;
+    transform-origin: center top;
+    animation: arrow 1s linear infinite alternate; }
+
+@keyframes arrow {
+  from {
+    transform: scaleY(1); }
+  to {
+    transform: scaleY(1.4); } }
 
 .about {
   width: 100vw;
@@ -43,6 +57,7 @@
   box-sizing: border-box;
   padding: 10vh 15vw;
   text-align: center;
+  background: linear-gradient(180deg, #949494, white 0.4%, white);
   color: #60b158; }
   .resume h1 {
     font-size: 4vh;
@@ -74,6 +89,7 @@
   box-sizing: border-box;
   padding: 10vh 30vw 30vh 30vw;
   text-align: center;
+  background: linear-gradient(180deg, #949494, white 1.5%, white);
   color: #60b158; }
   .contact h1 {
     font-size: 4vh;
@@ -91,6 +107,8 @@
       padding: 1vh;
       resize: none;
       border: 2px solid #C2965D; }
+    .contact form input:focus, .contact form textarea:focus, .contact form button:focus {
+      outline: 0; }
     .contact form button {
       width: 10vw;
       margin: 1vh 0;

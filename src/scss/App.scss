@@ -1,5 +1,6 @@
 $green: #60b158;
 $gold: #C2965D;
+$grey: #949494;
 
 .header {
     width: 100vw;
@@ -18,8 +19,13 @@ $gold: #C2965D;
 
     a {
         margin-left: 1vw;
-        color: $green;
+        color: $gold;
         text-decoration: none;
+    }
+
+    a:hover {
+        // text-decoration: underline;
+        border-bottom: 3px solid $gold;
     }
 }
 
@@ -29,8 +35,25 @@ $gold: #C2965D;
     justify-content: center;
     align-items: center;
 
-    img {
+    .logo {
         width: 20vw;
+    }
+
+    .arrow {
+        position: absolute;
+        bottom: 5vh;
+        width: 3vw;
+        transform-origin: center top;
+        animation: arrow 1s linear infinite alternate;
+    }
+}
+
+@keyframes arrow {
+    from {
+        transform: scaleY(1);
+    }
+    to {
+        transform: scaleY(1.4);
     }
 }
 
@@ -58,6 +81,7 @@ $gold: #C2965D;
     box-sizing: border-box;
     padding: 10vh 15vw;
     text-align: center;
+    background: linear-gradient(180deg, $grey, white 0.4%, white);
     color: $green;
 
     h1 {
@@ -103,6 +127,7 @@ $gold: #C2965D;
     box-sizing: border-box;
     padding: 10vh 30vw 30vh 30vw;
     text-align: center;
+    background: linear-gradient(180deg, $grey, white 1.5%, white);
     color: $green;
 
     h1 {
@@ -126,6 +151,10 @@ $gold: #C2965D;
             padding: 1vh;
             resize: none;
             border: 2px solid $gold;
+        }
+
+        input:focus, textarea:focus, button:focus {
+            outline: 0;
         }
 
         button {

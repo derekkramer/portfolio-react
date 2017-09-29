@@ -52,29 +52,32 @@ export default class Contact extends Component {
 
     render() {
         return (
-            <section className='contact'>
-                <h1>Contact</h1>
-                {this.state.error
-                ? <p className='error'>{this.state.error}</p>
-                : null
-                }
-                {this.state.sent
-                ? <p className='sent'>{this.state.sent}</p>
-                : null
-                }
-                <form onSubmit={this.handleSubmit}>
-                    <input type='text' name='name' placeholder='Your name' onChange={this.handleChange} ref={(node) => {
-                        this.name = node;
-                    }} required></input>
-                    <input type='text' name='email' placeholder='Your email' onChange={this.handleChange} ref={(node) => {
-                        this.email = node;
-                    }} required></input>
-                    <textarea name='message' placeholder='Your message' onChange={this.handleChange} ref={(node) => {
-                        this.message = node;
-                    }} required></textarea>
-                    <button type='submit'>Send</button>
-                </form>
-            </section>
+            <div>
+                <a name='contact' />
+                <section className='contact'>
+                    <h1>Contact</h1>
+                    {this.state.error
+                    ? <p className='error'>{this.state.error}</p>
+                    : null
+                    }
+                    {this.state.sent
+                    ? <p className='sent'>{this.state.sent}</p>
+                    : null
+                    }
+                    <form onSubmit={this.handleSubmit}>
+                        <input type='text' name='name' placeholder='Your name' onChange={this.handleChange} ref={(node) => {
+                            this.name = node;
+                        }} required></input>
+                        <input type='text' name='email' placeholder='Your email' onChange={this.handleChange} ref={(node) => {
+                            this.email = node;
+                        }} required></input>
+                        <textarea name='message' placeholder='Your message' onChange={this.handleChange} ref={(node) => {
+                            this.message = node;
+                        }} required></textarea>
+                        <button type='submit'>Send</button>
+                    </form>
+                </section>
+            </div>
         );
     }
 }
