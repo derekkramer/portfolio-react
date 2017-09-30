@@ -2,6 +2,14 @@ $green: #60b158;
 $gold: #C2965D;
 $grey: #949494;
 
+.headercontainer {
+    position: fixed;
+    width: 100vw;
+    height: 8vh;
+    background: linear-gradient(white, white 90%, $grey 91%, rgba(0, 0, 0, 0));
+    opacity: 0;
+}
+
 .header {
     width: 100vw;
     box-sizing: border-box;
@@ -9,22 +17,24 @@ $grey: #949494;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2vh 2vw;
+    padding: 2vh 2vw 2.5vh 2vw;
     color: $green;
+    z-index: 1;
 
     h1 {
+        font-size: 3vh;
         -webkit-margin-before: 0;
         -webkit-margin-after: 0;
     }
 
     a {
+        font-size: 2vh;
         margin-left: 1vw;
         color: $gold;
         text-decoration: none;
     }
 
     a:hover {
-        // text-decoration: underline;
         border-bottom: 3px solid $gold;
     }
 }
@@ -37,6 +47,7 @@ $grey: #949494;
 
     .logo {
         width: 20vw;
+        animation: logo 1s linear;
     }
 
     .arrow {
@@ -45,6 +56,18 @@ $grey: #949494;
         width: 3vw;
         transform-origin: center top;
         animation: arrow 1s linear infinite alternate;
+        z-index: -1;
+    }
+}
+
+@keyframes logo {
+    from {
+        transform: translateY(3vh);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
 
@@ -164,6 +187,7 @@ $grey: #949494;
             border: 2px solid $gold;
             background-color: white;
             font-size: 2vh;
+            font-weight: bold;
             color: $gold;
         }
 

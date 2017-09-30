@@ -29,7 +29,7 @@ export default class Contact extends Component {
             this.setState({ error: 'Please enter a valid email' });
         }else{
             jwt.sign(this.state, process.env.REACT_APP_TOKEN, (err, token) => {
-                axios.post('http://localhost:3001/', {token})
+                axios.post('https://derekportfolioapi.herokuapp.com/', {token})
                 .then(result => {
                     if(result.data.status === 'success'){
                         this.name.value = '';

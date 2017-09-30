@@ -6,10 +6,11 @@ import Contact from './components/Contact';
 
 class App extends Component {
     componentDidMount() {
-        let $logo = $('.header');
+        let $container = $('.headercontainer');
         $(document).scroll(() => {
-            $logo.css({'background-color': $(window).scrollTop() > 500 ? 'white' : 'transparent'});
-        });
+            let opacity = ($(window).scrollTop() - 450) / 100;
+            $container.css({'opacity': opacity});
+        })
     }
 
     render() {
@@ -27,15 +28,18 @@ class App extends Component {
 }
 
 const Header = () =>
-    <section className='header'>
-        <h1>Derek Kramer</h1>
-        <nav>
-            <a href='#about'>About</a>
-            <a href='#resume'>Resume</a>
-            <a href='#portfolio'>Portfolio</a>
-            <a href='#contact'>Contact</a>
-        </nav>
-    </section>
+    <div>
+        <section className='header'>
+            <h1>Derek Kramer</h1>
+            <nav>
+                <a href='#about'>About</a>
+                <a href='#resume'>Resume</a>
+                <a href='#portfolio'>Portfolio</a>
+                <a href='#contact'>Contact</a>
+            </nav>
+        </section>
+        <div className='headercontainer'></div>
+    </div>
 
 const Splash = () =>
     <section className='splash'>
@@ -48,7 +52,7 @@ const About = () =>
         <a name='about' />
         <section className='about'>
             <h1>About</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>I am a full stack web developer interested in both front and back end positions. I enjoy collaborating on projects and am a natural leader. I am passionate about innovative and unique applications, and enjoy creating my own in my free time. I enjoy mountain biking, hiking, and camping.</p>
         </section>
     </div>
 

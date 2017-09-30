@@ -1,3 +1,10 @@
+.headercontainer {
+  position: fixed;
+  width: 100vw;
+  height: 8vh;
+  background: linear-gradient(white, white 90%, #949494 91%, transparent);
+  opacity: 0; }
+
 .header {
   width: 100vw;
   box-sizing: border-box;
@@ -5,12 +12,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2vh 2vw;
-  color: #60b158; }
+  padding: 2vh 2vw 2.5vh 2vw;
+  color: #60b158;
+  z-index: 1; }
   .header h1 {
+    font-size: 3vh;
     -webkit-margin-before: 0;
     -webkit-margin-after: 0; }
   .header a {
+    font-size: 2vh;
     margin-left: 1vw;
     color: #C2965D;
     text-decoration: none; }
@@ -24,13 +34,23 @@
   justify-content: center;
   align-items: center; }
   .splash .logo {
-    width: 20vw; }
+    width: 20vw;
+    animation: logo 1s linear; }
   .splash .arrow {
     position: absolute;
     bottom: 5vh;
     width: 3vw;
     transform-origin: center top;
-    animation: arrow 1s linear infinite alternate; }
+    animation: arrow 1s linear infinite alternate;
+    z-index: -1; }
+
+@keyframes logo {
+  from {
+    transform: translateY(3vh);
+    opacity: 0; }
+  to {
+    transform: translateY(0);
+    opacity: 1; } }
 
 @keyframes arrow {
   from {
@@ -116,6 +136,7 @@
       border: 2px solid #C2965D;
       background-color: white;
       font-size: 2vh;
+      font-weight: bold;
       color: #C2965D; }
     .contact form button:hover {
       background-color: #C2965D;
