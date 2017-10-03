@@ -43,6 +43,7 @@ const Header = () =>
 
 const Splash = () =>
     <section className='splash'>
+        <div className='voronoi'></div>
         <img className='logo' src='./logo-high.png' alt='' />
         <img className='arrow' src='./arrow.png' alt='' />
     </section>
