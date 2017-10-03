@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './css/App.css';
 import $ from 'jquery';
 
+import Splash from './components/Splash';
 import Contact from './components/Contact';
 
 class App extends Component {
@@ -40,13 +41,6 @@ const Header = () =>
         </section>
         <div className='headercontainer'></div>
     </div>
-
-const Splash = () =>
-    <section className='splash'>
-        <div className='voronoi'></div>
-        <img className='logo' src='./logo-high.png' alt='' />
-        <img className='arrow' src='./arrow.png' alt='' />
-    </section>
 
 const About = () =>
     <div>
