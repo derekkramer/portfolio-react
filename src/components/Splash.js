@@ -43,9 +43,9 @@ function drawCell(cell){
 }
 
 function parallax(){
-  let scrollTop = window.pageYOffset;
+    let scrollTop = window.pageYOffset;
 
-  document.getElementById('background').style.top = -scrollTop * 0.5 + 'px';
+    document.getElementById('background').style.top = -scrollTop * 0.5 + 'px';
 }
 
 export default class Splash extends Component {
@@ -90,7 +90,7 @@ export default class Splash extends Component {
     render(){
         return (
             <section className='splash'>
-                <img id='background' src='./whiteboard-background-dark.jpg' />
+                <img id='background' src='./whiteboard-background-dark.jpg' alt='' />
                 <div id='voronoi'></div>
                 <img className='arrow' src='./arrow.png' alt='' />
             </section>

@@ -5,21 +5,18 @@ import $ from 'jquery';
 import Splash from './components/Splash';
 import Contact from './components/Contact';
 
+/* eslint-disable jsx-a11y/anchor-has-content */
+
 class App extends Component {
     componentDidMount() {
         $(document).scroll(() => {
             let opacity = ($(window).scrollTop() - 600) / 100;
-            $('.headercontainer').css({'opacity': opacity});
+            $('.headercontainer').css({ 'opacity': opacity });
         });
 
-        $('.panel').mouseover(event => {
-            event.target.parentElement.firstChild.style.filter = 'brightness(30%)';
-            console.log(event);
-        });
+        $('.panel').mouseover(event => event.target.parentElement.firstChild.style.filter = 'brightness(30%)');
 
-        $('.panel').mouseout(event => {
-            event.target.parentElement.firstChild.style.filter = 'brightness(100%)';
-        });
+        $('.panel').mouseout(event => event.target.parentElement.firstChild.style.filter = 'brightness(100%)');
     }
 
     render() {
@@ -77,25 +74,25 @@ const Portfolio = () =>
         </section>
         <div className='panel'>
             <div>
-                <a href='https://chrome.google.com/webstore/detail/pidream/gacinemcmmanhhomahedjeicpjbgkigb' target='_blank'>
+                <a href='https://chrome.google.com/webstore/detail/pidream/gacinemcmmanhhomahedjeicpjbgkigb' target='_blank'  rel='noopener noreferrer'>
                     <img src='./project1.png' alt='Krzywinskis Circle' />
                     <div>Krzywinski's Circle</div>
                 </a>
             </div>
             <div>
-                <a href='https://agile-overload.herokuapp.com/' target='_blank'>
+                <a href='https://agile-overload.herokuapp.com/' target='_blank'  rel='noopener noreferrer'>
                     <img src='./project2.png' alt='Agile Overload' />
                     <div>Agile Overload</div>
                 </a>
             </div>
             <div>
-                <a href='https://mycro.herokuapp.com/' target='_blank'>
+                <a href='https://mycro.herokuapp.com/' target='_blank'  rel='noopener noreferrer'>
                     <img src='./project3.png' alt='MycroLens' />
                     <div>MycroLens</div>
                 </a>
             </div>
             <div>
-                <a href='https://spacexaminer.herokuapp.com' target='_blank'>
+                <a href='https://spacexaminer.herokuapp.com' target='_blank'  rel='noopener noreferrer'>
                     <img src='./project4.png' alt='SpaceXaminer' />
                     <div>SpaceXaminer</div>
                 </a>

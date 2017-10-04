@@ -1,15 +1,15 @@
 {
-  "short_name": "DerekKramer",
-  "name": "Derek Kramer",
-  "icons": [
+    "short_name": "DerekKramer",
+    "name": "Derek Kramer",
+    "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "192x192",
-      "type": "image/png"
+        "src": "icon.png",
+        "sizes": "192x192",
+        "type": "image/png"
     }
-  ],
-  "start_url": "./index.html",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+    ],
+    "start_url": "./index.html",
+    "display": "standalone",
+    "theme_color": "#60B158",
+    "background_color": "#000000"
 }

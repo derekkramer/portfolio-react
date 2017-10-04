@@ -5,6 +5,8 @@ import $ from 'jquery';
 const axios = require('axios');
 const jwt = require('jsonwebtoken');
 
+/* eslint-disable jsx-a11y/anchor-has-content */
+
 export default class Contact extends Component {
     constructor(props){
         super(props);
@@ -91,19 +93,19 @@ export default class Contact extends Component {
                     </form>
                     <section className='links'>
                         <div>
-                            <a href='https://github.com/derekkramer' target='_blank'><img src='./github.png' alt='' /></a>
+                            <a href='https://github.com/derekkramer' target='_blank' rel='noopener noreferrer'><img src='./github.png' alt='GitHub' /></a>
                             <p>GitHub</p>
                         </div>
                         <div>
-                            <a href='https://linkedin.com/in/derek-kramer' target='_blank'><img src='./linkedin.png' alt='' /></a>
+                            <a href='https://linkedin.com/in/derek-kramer' target='_blank' rel='noopener noreferrer'><img src='./linkedin.png' alt='LinkedIn' /></a>
                             <p>LinkedIn</p>
                         </div>
                         <div>
-                            <a href='https://builtincolorado.com/member/derek-kramer' target='_blank'><img src='./builtin.png' alt='' /></a>
+                            <a href='https://builtincolorado.com/member/derek-kramer' target='_blank' rel='noopener noreferrer'><img src='./builtin.png' alt='BuiltInColorado' /></a>
                             <p>BuiltIn</p>
                         </div>
                         <div>
-                            <a href='https://talent.galvanize.com/students/1422' target='_blank'><img src='./galvanize.png' alt='' /></a>
+                            <a href='https://talent.galvanize.com/students/1422' target='_blank' rel='noopener noreferrer'><img src='./galvanize.png' alt='Galvanize Talent' /></a>
                             <p>gTalent</p>
                         </div>
                     </section>
