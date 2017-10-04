@@ -190,7 +190,7 @@ $grey: #949494;
 .contact {
     width: 100vw;
     box-sizing: border-box;
-    padding: 10vh 30vw 30vh 30vw;
+    padding: 10vh 30vw 15vh 30vw;
     text-align: center;
     background: linear-gradient(180deg, $grey, white 1.5%, white);
     color: $green;
@@ -238,4 +238,36 @@ $grey: #949494;
             color: white;
         }
     }
+
+    .links {
+        width: 75%;
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        padding-top: 10vh;
+
+        div {
+            width: 15%;
+
+            img {
+                width: 100%;
+            }
+
+            p {
+                -webkit-margin-before: 1vh;
+                font-size: 2vh;
+                color: white;
+                transition: color 0.25s;
+            }
+        }
+    }
+}
+
+.copyright {
+    width: 100vw;
+    padding: 3vh 3vw;
+    background-color: white;
+    box-sizing: border-box;
+    text-align: right;
+    color: $grey;
 }

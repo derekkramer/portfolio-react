@@ -31,6 +31,7 @@ class App extends Component {
                 <Resume />
                 <Portfolio />
                 <Contact />
+                <Copyright />
             </div>
         );
     }
@@ -101,5 +102,10 @@ const Portfolio = () =>
             </div>
         </div>
     </div>
+
+const Copyright = () =>
+    <section className='copyright'>
+        &copy; Derek Kramer 2017
+    </section>
 
 export default App;

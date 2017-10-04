@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import '../css/App.css';
+import $ from 'jquery';
 
 const axios = require('axios');
 const jwt = require('jsonwebtoken');
@@ -50,6 +51,18 @@ export default class Contact extends Component {
         event.preventDefault();
     }
 
+    componentDidMount(){
+        $('.links').mouseover(event => {
+            if(event.target.nodeName === 'IMG')
+                event.target.parentElement.nextSibling.style.color = '#949494';
+        });
+
+        $('.links').mouseout(event => {
+            if(event.target.nodeName === 'IMG')
+                event.target.parentElement.nextSibling.style.color = 'white';
+        });
+    }
+
     render(){
         return (
             <div>
@@ -71,11 +84,29 @@ export default class Contact extends Component {
                         <input type='text' name='email' placeholder='Your email' onChange={this.handleChange} ref={(node) => {
                             this.email = node;
                         }} required></input>
-                        <textarea name='message' placeholder='Your message' onChange={this.handleChange} ref={(node) => {
+                        <textarea rows='5' name='message' placeholder='Your message' onChange={this.handleChange} ref={(node) => {
                             this.message = node;
                         }} required></textarea>
                         <button type='submit'>Send</button>
                     </form>
+                    <section className='links'>
+                        <div>
+                            <a href='https://github.com/derekkramer' target='_blank'><img src='./github.png' alt='' /></a>
+                            <p>GitHub</p>
+                        </div>
+                        <div>
+                            <a href='https://linkedin.com/in/derek-kramer' target='_blank'><img src='./linkedin.png' alt='' /></a>
+                            <p>LinkedIn</p>
+                        </div>
+                        <div>
+                            <a href='https://builtincolorado.com/member/derek-kramer' target='_blank'><img src='./builtin.png' alt='' /></a>
+                            <p>BuiltIn</p>
+                        </div>
+                        <div>
+                            <a href='https://talent.galvanize.com/students/1422' target='_blank'><img src='./galvanize.png' alt='' /></a>
+                            <p>gTalent</p>
+                        </div>
+                    </section>
                 </section>
             </div>
         );
