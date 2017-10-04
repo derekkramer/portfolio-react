@@ -236,6 +236,12 @@ $grey: #949494;
             background-color: $gold;
             color: white;
         }
+
+        button:disabled {
+            border: 2px solid $grey;
+            background-color: white;
+            color: $grey;
+        }
     }
 
     .links {

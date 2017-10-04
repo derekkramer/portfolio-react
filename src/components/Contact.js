@@ -28,8 +28,14 @@ export default class Contact extends Component {
     }
 
     handleSubmit(event){
+        $('#submit').prop('disabled', true);
+        $('#submit').html('<i class="fa fa-spinner fa-pulse"></i>');
+
         if(!this.state.email.includes('@') || !this.state.email.includes('.')){
             this.setState({ error: 'Please enter a valid email' });
+
+            $('#submit').prop('disabled', false);
+            $('#submit').text('Send');
         }else{
             jwt.sign(this.state, process.env.REACT_APP_TOKEN, (err, token) => {
                 axios.post('http://ec2-34-215-7-76.us-west-2.compute.amazonaws.com:3000/', {token})
@@ -41,10 +47,16 @@ export default class Contact extends Component {
 
                         this.setState({ error: '', sent: result.data.data });
 
+                        $('#submit').prop('disabled', false);
+                        $('#submit').text('Send');
+
                         setTimeout(() => this.setState({ sent: '' }), 5000);
                     }else{
                         console.log(result.data);
                         this.setState({ error: result.data.data });
+
+                        $('#submit').prop('disabled', false);
+                        $('#submit').text('Send');
                     }
                 });
             });
@@ -80,16 +92,16 @@ export default class Contact extends Component {
                     : null
                     }
                     <form onSubmit={this.handleSubmit}>
-                        <input type='text' name='name' placeholder='Your name' onChange={this.handleChange} ref={(node) => {
+                        <input type='text' name='name' placeholder='Your name' onChange={this.handleChange} ref={node => {
                             this.name = node;
                         }} required></input>
-                        <input type='text' name='email' placeholder='Your email' onChange={this.handleChange} ref={(node) => {
+                        <input type='text' name='email' placeholder='Your email' onChange={this.handleChange} ref={node => {
                             this.email = node;
                         }} required></input>
-                        <textarea rows='5' name='message' placeholder='Your message' onChange={this.handleChange} ref={(node) => {
+                        <textarea rows='5' name='message' placeholder='Your message' onChange={this.handleChange} ref={node => {
                             this.message = node;
                         }} required></textarea>
-                        <button type='submit'>Send</button>
+                        <button type='submit' id='submit'>Send</button>
                     </form>
                     <section className='links'>
                         <div>
