@@ -1,11 +1,11 @@
 # [React Portfolio](https://www.github.com/derekkramer/portfolio-react "Portfolio")
 
-<!-- [![Build Status](https://travis-ci.org/derekkramer/spacexaminer.svg?branch=master)](https://travis-ci.org/derekkramer/spacexaminer)
-[![GitHub release](https://img.shields.io/github/release/derekkramer/spacexaminer.svg)]()
-[![Code Climate](https://codeclimate.com/github/derekkramer/spacexaminer/badges/gpa.svg)](https://codeclimate.com/github/derekkramer/spacexaminer)
-[![Issue Count](https://codeclimate.com/github/derekkramer/spacexaminer/badges/issue_count.svg)](https://codeclimate.com/github/derekkramer/spacexaminer)
-[![dependencies Status](https://david-dm.org/expressjs/express/status.svg)](https://david-dm.org/expressjs/express)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fderekkramer%2Fspacexaminer.svg?type=shield)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fderekkramer%2Fspacexaminer?ref=badge_shield) -->
+[![Build Status](https://travis-ci.org/derekkramer/portfolio-react.svg?branch=master)](https://travis-ci.org/derekkramer/portfolio-react)
+<!-- [![GitHub release](https://img.shields.io/github/release/derekkramer/spacexaminer.svg)]() -->
+[![Code Climate](https://codeclimate.com/github/derekkramer/portfolio-react/badges/gpa.svg)](https://codeclimate.com/github/derekkramer/portfolio-react)
+[![Issue Count](https://codeclimate.com/github/derekkramer/portfolio-react/badges/issue_count.svg)](https://codeclimate.com/github/derekkramer/portfolio-react)
+[![Dependencies Status](https://david-dm.org/derekkramer/portfolio-react.svg)](https://david-dm.org/derekkramer/portfolio-react)
+<!-- [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fderekkramer%2Fspacexaminer.svg?type=shield)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fderekkramer%2Fspacexaminer?ref=badge_shield) -->
 
 ---
 

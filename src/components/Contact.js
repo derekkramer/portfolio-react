@@ -38,6 +38,11 @@ export default class Contact extends Component {
             $('#submit').text('Send');
         }else{
             jwt.sign(this.state, process.env.REACT_APP_TOKEN, (err, token) => {
+                if(err){
+                    console.log(err);
+                    this.setState({ error: err });
+                }
+                
                 axios.post('http://ec2-34-215-7-76.us-west-2.compute.amazonaws.com:3000/', {token})
                 .then(result => {
                     if(result.data.status === 'success'){
