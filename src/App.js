@@ -9,9 +9,9 @@ class App extends Component {
     componentDidMount() {
         let $container = $('.headercontainer');
         $(document).scroll(() => {
-            let opacity = ($(window).scrollTop() - 450) / 100;
+            let opacity = ($(window).scrollTop() - 600) / 100;
             $container.css({'opacity': opacity});
-        })
+        });
     }
 
     render() {

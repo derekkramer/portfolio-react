@@ -33,11 +33,20 @@
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: white; }
-  .splash .logo {
-    width: 20vw;
-    animation: logo 1s linear; }
+  align-items: center; }
+  .splash #background {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; }
+  .splash #voronoi canvas {
+    mask-image: url("../mask.png");
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background-color: #60b158;
+    animation: logo 3s linear; }
   .splash .arrow {
     position: absolute;
     bottom: 5vh;
@@ -47,10 +56,13 @@
     z-index: 1; }
 
 @keyframes logo {
-  from {
+  0% {
     transform: translateY(3vh);
     opacity: 0; }
-  to {
+  50% {
+    transform: translateY(3vh);
+    opacity: 0; }
+  100% {
     transform: translateY(0);
     opacity: 1; } }
 
