@@ -7,10 +7,18 @@ import Contact from './components/Contact';
 
 class App extends Component {
     componentDidMount() {
-        let $container = $('.headercontainer');
         $(document).scroll(() => {
             let opacity = ($(window).scrollTop() - 600) / 100;
-            $container.css({'opacity': opacity});
+            $('.headercontainer').css({'opacity': opacity});
+        });
+
+        $('.panel').mouseover(event => {
+            event.target.parentElement.firstChild.style.filter = 'brightness(30%)';
+            console.log(event);
+        });
+
+        $('.panel').mouseout(event => {
+            event.target.parentElement.firstChild.style.filter = 'brightness(100%)';
         });
     }
 
@@ -65,29 +73,33 @@ const Portfolio = () =>
         <a name='portfolio' />
         <section className='portfolio'>
             <h1>Portfolio</h1>
-            <div className='panel'>
-                <div>
-                    <a href='https://chrome.google.com/webstore/detail/pidream/gacinemcmmanhhomahedjeicpjbgkigb' target='_blank'>
-                        <img src='./project1.png' alt='Krzywinskis Circle' />
-                    </a>
-                </div>
-                <div>
-                    <a href='https://agile-overload.herokuapp.com/' target='_blank'>
-                        <img src='./project2.png' alt='Agile Overload' />
-                    </a>
-                </div>
-                <div>
-                    <a href='https://mycro.herokuapp.com/' target='_blank'>
-                        <img src='./project3.png' alt='MycroLens' />
-                    </a>
-                </div>
-                <div>
-                    <a href='https://spacexaminer.herokuapp.com' target='_blank'>
-                        <img src='./project4.png' alt='SpaceXaminer' />
-                    </a>
-                </div>
-            </div>
         </section>
+        <div className='panel'>
+            <div>
+                <a href='https://chrome.google.com/webstore/detail/pidream/gacinemcmmanhhomahedjeicpjbgkigb' target='_blank'>
+                    <img src='./project1.png' alt='Krzywinskis Circle' />
+                    <div>Krzywinski's Circle</div>
+                </a>
+            </div>
+            <div>
+                <a href='https://agile-overload.herokuapp.com/' target='_blank'>
+                    <img src='./project2.png' alt='Agile Overload' />
+                    <div>Agile Overload</div>
+                </a>
+            </div>
+            <div>
+                <a href='https://mycro.herokuapp.com/' target='_blank'>
+                    <img src='./project3.png' alt='MycroLens' />
+                    <div>MycroLens</div>
+                </a>
+            </div>
+            <div>
+                <a href='https://spacexaminer.herokuapp.com' target='_blank'>
+                    <img src='./project4.png' alt='SpaceXaminer' />
+                    <div>SpaceXaminer</div>
+                </a>
+            </div>
+        </div>
     </div>
 
 export default App;
