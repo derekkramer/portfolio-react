@@ -77,7 +77,7 @@
   box-sizing: border-box;
   padding: 10vh 30vw;
   text-align: center;
-  background-color: #60b158;
+  background: linear-gradient(180deg, #60b158, #3e7939);
   color: white; }
   .about h1 {
     font-size: 4vh;
@@ -104,7 +104,7 @@
   box-sizing: border-box;
   padding: 10vh 15vw;
   text-align: center;
-  background-color: #60b158;
+  background: linear-gradient(180deg, #60b158, #3e7939);
   color: white; }
   .portfolio h1 {
     font-size: 4vh;

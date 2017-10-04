@@ -1,4 +1,6 @@
 $green: #60b158;
+// $darkgreen: #478b41;
+$darkgreen: #3e7939;
 $gold: #C2965D;
 $grey: #949494;
 
@@ -101,7 +103,7 @@ $grey: #949494;
     box-sizing: border-box;
     padding: 10vh 30vw;
     text-align: center;
-    background-color: $green;
+    background: linear-gradient(180deg, $green, $darkgreen);
     color: white;
 
     h1 {
@@ -138,7 +140,7 @@ $grey: #949494;
     box-sizing: border-box;
     padding: 10vh 15vw;
     text-align: center;
-    background-color: $green;
+    background: linear-gradient(180deg, $green, $darkgreen);
     color: white;
 
     h1 {
