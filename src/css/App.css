@@ -102,19 +102,21 @@
 .portfolio {
   width: 100vw;
   box-sizing: border-box;
-  padding: 10vh 15vw;
+  padding-top: 5vh;
   text-align: center;
   background: linear-gradient(180deg, #60b158, #3e7939);
   color: white; }
   .portfolio h1 {
     font-size: 4vh;
-    margin-bottom: 5vh; }
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 5vh; }
   .portfolio .panel {
-    width: 70vw;
+    width: 100vw;
     display: flex;
     justify-content: space-between; }
     .portfolio .panel div {
-      width: 15vw; }
+      width: 25vw;
+      height: 25vw; }
       .portfolio .panel div img {
         width: 100%; }
 
