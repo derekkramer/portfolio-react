@@ -45,11 +45,21 @@ $grey: #949494;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
 
-    .logo {
-        width: 20vw;
-        animation: logo 1s linear;
+    #background {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0; left: 0;
+        z-index: -1;
+    }
+
+    #voronoi canvas {
+        mask-image: url('../mask.png');
+        mask-size: contain;
+        mask-repeat: no-repeat;
+        background-color: $green;
+        animation: logo 3s linear;
     }
 
     .arrow {
@@ -63,11 +73,15 @@ $grey: #949494;
 }
 
 @keyframes logo {
-    from {
+    0% {
         transform: translateY(3vh);
         opacity: 0;
     }
-    to {
+    50% {
+        transform: translateY(3vh);
+        opacity: 0;
+    }
+    100% {
         transform: translateY(0);
         opacity: 1;
     }

@@ -50,7 +50,7 @@ export default class Contact extends Component {
         event.preventDefault();
     }
 
-    render() {
+    render(){
         return (
             <div>
                 <a name='contact' />
