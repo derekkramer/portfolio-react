@@ -1,4 +1,4 @@
-# [React Portfolio](https://derekkramer.co "Portfolio")
+# [React Portfolio](http://derekkramer.co "Portfolio")
 
 [![Build Status](https://travis-ci.org/derekkramer/portfolio-react.svg?branch=master)](https://travis-ci.org/derekkramer/portfolio-react)
 [![GitHub release](https://img.shields.io/github/release/derekkramer/portfolio-react.svg)]()
@@ -11,7 +11,7 @@
 
 **React Portfolio** is a simple and easy-to-use portfolio application for Full Stack Web Developer [Derek Kramer](https://linkedin.com/in/derek-kramer). The application is built on the [React](https://reactjs.org/) framework using [D3](https://d3js.org/) and [jQuery](https://jquery.com/). The contact component uses a [NodeJS](https://nodejs.org) back end with [Express](https://expressjs.com) for email functionality.  
 
-*Portfolio hosted at <https://derekkramer.co>*
+*Portfolio hosted at <http://derekkramer.co>*
 
 ![Screenshot](readme-src/portfolio-screenshot.png)
 
