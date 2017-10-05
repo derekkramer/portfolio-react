@@ -1,17 +1,19 @@
-# [React Portfolio](https://www.github.com/derekkramer/portfolio-react "Portfolio")
+# [React Portfolio](https://derekkramer.co "Portfolio")
 
 [![Build Status](https://travis-ci.org/derekkramer/portfolio-react.svg?branch=master)](https://travis-ci.org/derekkramer/portfolio-react)
-<!-- [![GitHub release](https://img.shields.io/github/release/derekkramer/spacexaminer.svg)]() -->
+[![GitHub release](https://img.shields.io/github/release/derekkramer/portfolio-react.svg)]()
 [![Code Climate](https://codeclimate.com/github/derekkramer/portfolio-react/badges/gpa.svg)](https://codeclimate.com/github/derekkramer/portfolio-react)
 [![Issue Count](https://codeclimate.com/github/derekkramer/portfolio-react/badges/issue_count.svg)](https://codeclimate.com/github/derekkramer/portfolio-react)
 [![Dependencies Status](https://david-dm.org/derekkramer/portfolio-react.svg)](https://david-dm.org/derekkramer/portfolio-react)
-<!-- [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fderekkramer%2Fspacexaminer.svg?type=shield)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fderekkramer%2Fspacexaminer?ref=badge_shield) -->
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fderekkramer%2Fportfolio-react.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fderekkramer%2Fportfolio-react?ref=badge_shield)
 
 ---
 
 **React Portfolio** is a simple and easy-to-use portfolio application for Full Stack Web Developer [Derek Kramer](https://linkedin.com/in/derek-kramer). The application is built on the [React](https://reactjs.org/) framework using [D3](https://d3js.org/) and [jQuery](https://jquery.com/). The contact component uses a [NodeJS](https://nodejs.org) back end with [Express](https://expressjs.com) for email functionality.  
 
-![Screenshot](readme-src/portfolio-screen-shot.png)
+*Portfolio hosted at <https://derekkramer.co>*
+
+![Screenshot](readme-src/portfolio-screenshot.png)
 
 ## Table of contents
 
