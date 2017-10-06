@@ -50,6 +50,7 @@ $ npm start
 ##### &emsp;&emsp;&emsp;&emsp;&emsp; [<img src="https://realpython.com/images/react.png" height="50" align="top">](https://reactjs.org)
 ##### &emsp;&emsp;&emsp;&emsp;&emsp; [<img src="http://sass-lang.com/assets/img/styleguide/color-1c4aab2b.png" height="50" align="top">](https://sass-lang.com)
 ##### &emsp;&emsp;&emsp;&emsp;&emsp; [<img src="https://raw.githubusercontent.com/d3/d3-logo/master/d3.png" height="50" align="top">](https://www.d3js.org)
+##### &emsp;&emsp;&emsp;&emsp;&emsp; [<img src="https://jwt.io/assets/logo.svg" height="50" align="top">](https://www.jwt.io)
 ##### &emsp;&emsp;&emsp;&emsp;&emsp; [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Node.js_logo_2015.svg/591px-Node.js_logo_2015.svg.png" height="50" align="top">](https://nodejs.org)
 ##### &emsp;&emsp;&emsp;&emsp;&emsp; [<img src="http://www.amt.in/img/services/express.png" height="50" align="top">](https://expressjs.com)
 
