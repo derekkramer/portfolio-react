@@ -3,7 +3,6 @@ import '../css/App.css';
 import $ from 'jquery';
 
 const axios = require('axios');
-const jwt = require('jsonwebtoken');
 
 /* eslint-disable jsx-a11y/anchor-has-content */
 
@@ -37,33 +36,33 @@ export default class Contact extends Component {
             $('#submit').prop('disabled', false);
             $('#submit').text('Send');
         }else{
-            jwt.sign(this.state, process.env.REACT_APP_TOKEN, (err, token) => {
-                if(err){
-                    console.log(err);
-                    this.setState({ error: err });
+            let body = {
+                name: this.state.name,
+                email: this.state.email,
+                message: this.state.message
+            };
+
+            axios.post('https://vqde6no4kj.execute-api.us-west-2.amazonaws.com/prod/PortfolioMessages', body)
+            .then(result => {
+                console.log(result);
+                if(result.data === 'success'){
+                    this.name.value = '';
+                    this.email.value = '';
+                    this.message.value = '';
+
+                    this.setState({ error: '', sent: 'Thank you, your message has been sent' });
+
+                    $('#submit').prop('disabled', false);
+                    $('#submit').text('Send');
+
+                    setTimeout(() => this.setState({ sent: '' }), 5000);
+                }else{
+                    console.log(result.data);
+                    this.setState({ error: 'Error' });
+
+                    $('#submit').prop('disabled', false);
+                    $('#submit').text('Send');
                 }
-                
-                axios.post('http://ec2-34-215-7-76.us-west-2.compute.amazonaws.com:3000/', {token})
-                .then(result => {
-                    if(result.data.status === 'success'){
-                        this.name.value = '';
-                        this.email.value = '';
-                        this.message.value = '';
-
-                        this.setState({ error: '', sent: result.data.data });
-
-                        $('#submit').prop('disabled', false);
-                        $('#submit').text('Send');
-
-                        setTimeout(() => this.setState({ sent: '' }), 5000);
-                    }else{
-                        console.log(result.data);
-                        this.setState({ error: result.data.data });
-
-                        $('#submit').prop('disabled', false);
-                        $('#submit').text('Send');
-                    }
-                });
             });
         }
 
